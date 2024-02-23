@@ -127,18 +127,6 @@ def sud2sat():
     number_of_clauses += count
     final_res += res
 
-    count, res = at_least_row()
-    number_of_clauses += count
-    final_res += res
-
-    count, res = at_least_column()
-    number_of_clauses += count
-    final_res += res
-    
-    count, res = at_least_subgrid()
-    number_of_clauses += count
-    final_res += res
-
     print("p cnf " + str(variables) + " " + str(number_of_clauses))
     print(final_res)
     
