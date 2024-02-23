@@ -14,14 +14,16 @@ minisat puzzle.cnf assign.txt >stat.txt
 ./sat2sud.py <assign.txt >solution.txt
 ```
 
-basic_task
+basic_task - minimal encoding of a 9x9 sudokus
+- Read in an encoded puzzle and output the CNF form
+- Ready to be input into minisat
 
+extended1 - minimal encoding of ninety-five 9x9 sudokus
+Read in 9 9x9 sudokus and 
 
-extended1
+extended2 - efficient encoding of a 9x9 sudokus
 
-extended2
-
-extended3∂∂
+extended3 - extended encoding of a 9x9 sudokus
 
 
 Names:
