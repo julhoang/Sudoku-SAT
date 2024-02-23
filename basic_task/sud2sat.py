@@ -20,15 +20,13 @@ def prefilled_values(sud_input):
 def individual_constraints():
     res = ""
     count = 0
-    vars = 0
     for i in range(1, 10):
         for j in range(1, 10):
             for k in range(1, 10):
                 res += str(to_base10(i, j, k))+' '
-                vars += 1
             count += 1
             res += '0\n' # Terminate with a 0
-    return vars, count, res
+    return count, res
 
 
 # Generate the clauses for the rows
@@ -89,13 +87,12 @@ def sud2sat():
     
     number_of_clauses = 0
     final_res = ""
-    variables = 0
     
     count, res = prefilled_values(sud_input)
     number_of_clauses += count
     final_res += res
     
-    variables, count, res = individual_constraints()
+    count, res = individual_constraints()
     number_of_clauses += count
     final_res += res
 
@@ -111,10 +108,8 @@ def sud2sat():
     number_of_clauses += count
     final_res += res
     
-    print("p cnf " + str(variables) + " " + str(number_of_clauses))
+    print("p cnf " + str(729) + " " + str(number_of_clauses))
     print(final_res)
-    
-
 
 if __name__ == "__main__":
     sud2sat()
