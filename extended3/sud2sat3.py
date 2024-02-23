@@ -123,7 +123,7 @@ def at_least_subgrid():
             for b in range(0,3):
                 for u in range(1,4):
                     for v in range(1,4):
-                        res+=str(to_base10(3*a+u, 3*b+v, k)) 
+                        res+=str(to_base10(3*a+u, 3*b+v, k))+' '
                 # count clauses when you escape u loop
                 count += 1
                 res += '0\n' # Terminate with a 0

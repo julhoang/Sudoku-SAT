@@ -51,7 +51,7 @@ def main():
     os.system('./sud2sat1.py <puzzle.txt >puzzle.cnf')
 
     for puzzle_file in range(95):
-        command = 'minisat puzzle' + puzzle_file + '.cnf assign.txt >stat.txt'
+        command = 'minisat puzzle' + str(puzzle_file) + '.cnf assign.txt >stat.txt'
         os.system(command)
         # os.system('./sat2sud.py <assign.txt >solution.txt')
         # sol_text = open("solution.txt", "r")

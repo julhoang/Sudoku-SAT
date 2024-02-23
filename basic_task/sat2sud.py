@@ -12,11 +12,11 @@ def sat2sud():
         # Go through every row
         for r in range(9):
             count = 0
-            
+
             # Go through every column
             for c in range(9):
                 count+=1
-                
+
                 # Iterate through each variable and extract the value
                 location = nums[r*9+c]
                 k = (location - 1) % 9 + 1
