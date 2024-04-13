@@ -1,10 +1,5 @@
 # Submission for Project 1
 
-## Names:
-Julia Hoang - V00974641  
-Sara Subedi - V00986656  
-Angus Bews - V00980317  
-
 This repository contains 4 folders:
 - basic_task: minimal encoding of a 9x9 sudokus
     1. sud2sat.py
